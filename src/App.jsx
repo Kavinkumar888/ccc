@@ -11,9 +11,6 @@ import CartPage from './pages/Cart';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
-import ShopAll from './pages/ShopAll';
-import MyOrders from './pages/MyOrders';
-import ContactUs from './components/ContactUs'; // Ithu add pannanum
 
 const App = () => {
   return (
@@ -23,8 +20,8 @@ const App = () => {
         {/* Navbar */}
         <NavBar />
 
-        {/* Main Content */}
-        <main className="flex-grow">
+        {/* Main Content with padding for fixed navbar */}
+        <main className="flex-grow pt-24"> {/* Adjusted padding */}
           <Routes>
             {/* Home Page */}
             <Route path="/" element={<Home />} />
@@ -33,15 +30,12 @@ const App = () => {
             <Route path="/kids" element={<KidsPage />} />
             <Route path="/bedroomsets" element={<BedroomPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/shopall" element={<ShopAll />} />
-            <Route path="/myorders" element={<MyOrders />} />
-            <Route path="/contact" element={<ContactUs />} />
 
             {/* 404 Page */}
             <Route path="*" element={<div className="text-center py-8 text-xl">Page Not Found</div>} />
           </Routes>
-
         </main>
+
         <ScrollToTopButton />
         <WhatsAppButton />
         <Footer />  

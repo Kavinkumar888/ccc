@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { productsData } from '../assets/data';
-import { FaBed, FaStar } from 'react-icons/fa';
-import { FiTag, FiZoomIn } from 'react-icons/fi';
+import { FaBed, FaStar, FaCube } from 'react-icons/fa';
+import { FiTag, FiZoomIn, FiPackage, FiImage } from 'react-icons/fi';
 
 const BedroomPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -18,7 +18,7 @@ const BedroomPage = () => {
     { name: 'All', icon: <FiTag size={18} /> },
     { name: 'Bedding', icon: <FaBed size={18} /> },
     { name: 'Super King Size Bedding', icon: <FaStar size={18} /> },
-    { name: 'Bedsheet Sets', icon: <FaBed size={18} /> },
+    { name: 'Bedsheet Sets', icon: <FiPackage size={18} /> },
   ];
 
   const handleAddToCart = (product) => {
@@ -27,6 +27,12 @@ const BedroomPage = () => {
     setTimeout(() => {
       setNotification(null);
     }, 2000);
+  };
+
+  // Function to handle image error
+  const handleImageError = (e) => {
+    e.target.src = 'https://via.placeholder.com/300x300/8B5CF6/FFFFFF?text=Bedroom+Set';
+    e.target.alt = 'Bedroom Set Image';
   };
 
   return (
@@ -69,14 +75,32 @@ const BedroomPage = () => {
 
             {filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.map((product) => (
+                {filteredProducts.map((product, index) => (
                   <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
-                    <div className="relative overflow-hidden bg-gray-100">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
+                    <div className="relative overflow-hidden bg-gray-100 h-64">
+                      {/* Product Image with Error Handling */}
+                      {product.image ? (
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          onError={handleImageError}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-purple-100 to-indigo-100">
+                          <FiImage className="text-4xl text-purple-400 mb-2" />
+                          <span className="text-purple-600 font-medium">No Image</span>
+                        </div>
+                      )}
+                      
+                      {/* Piece Number Badge */}
+                      <div className="absolute top-3 left-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
+                        <FaCube className="text-xs" />
+                        Piece {index + 1}
+                      </div>
+                      
+                      {/* Zoom Overlay */}
                       <div 
                         className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 cursor-pointer flex items-center justify-center"
                         onClick={() => setSelectedImage(product.image)}
@@ -90,6 +114,17 @@ const BedroomPage = () => {
                     <div className="p-4">
                       <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
                       <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
+                      
+                      {/* Product Details */}
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2 text-sm text-gray-500">
+                          <FiPackage className="text-purple-500" />
+                          <span>1 Piece </span>
+                        </div>
+                        <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded-full font-medium">
+                          In Stock
+                        </span>
+                      </div>
                       
                       <div className="flex items-center justify-between">
                         <span className="text-xl font-bold text-purple-600">₹{product.price}</span>
@@ -113,6 +148,36 @@ const BedroomPage = () => {
             )}
           </div>
         </div>
+
+        {/* Additional Info Section */}
+        <div className="mt-12 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-8 border border-purple-200">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">About Our Bedroom Sets</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="text-center p-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FaCube className="text-purple-600 text-xl" />
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Single Piece Sets</h3>
+                <p className="text-sm text-gray-600">Each product is a complete 1-piece set ready to use</p>
+              </div>
+              <div className="text-center p-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FiPackage className="text-purple-600 text-xl" />
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Complete Package</h3>
+                <p className="text-sm text-gray-600">Everything you need in one convenient package</p>
+              </div>
+              <div className="text-center p-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FaStar className="text-purple-600 text-xl" />
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Premium Quality</h3>
+                <p className="text-sm text-gray-600">High-quality materials and craftsmanship</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Image Popup Modal */}
@@ -123,6 +188,9 @@ const BedroomPage = () => {
               src={selectedImage} 
               alt="Product" 
               className="max-w-full max-h-screen object-contain rounded-lg"
+              onError={(e) => {
+                e.target.src = 'https://via.placeholder.com/800x600/8B5CF6/FFFFFF?text=Bedroom+Set+Image';
+              }}
             />
             <button
               className="absolute top-4 right-4 bg-white text-gray-800 p-2 rounded-full hover:bg-gray-200 transition-colors duration-300 shadow-lg"

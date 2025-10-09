@@ -40,36 +40,8 @@ const NavBar = () => {
       <div className="container mx-auto px-4">
         {/* Main Navigation Bar */}
         <div className="flex justify-between items-center h-16">
-          {/* Left Side - Logo */}
-          <div className="flex items-center">
-            <div className="transition-transform duration-500 hover:scale-105">
-              <img 
-                src={logo} 
-                alt="CK Textiles" 
-                className={`transition-all duration-500 ${
-                  scrolled ? 'h-10' : 'h-12'
-                } drop-shadow-lg`} 
-              />
-            </div>
-            {/* Company Name Text */}
-            <div className="ml-3 hidden sm:block">
-              <h1 className="text-xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                CK Textiles
-              </h1>
-              <p className="text-xs text-gray-500">Premium Fashion</p>
-            </div>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            className="lg:hidden text-gray-700 text-2xl p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 ml-4"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <FiX /> : <FiMenu />}
-          </button>
-
-          {/* Desktop Navigation Links - Centered */}
-          <div className="hidden lg:flex items-center space-x-1 absolute left-1/2 transform -translate-x-1/2">
+          {/* Left Side - Navigation Links (Corner) */}
+          <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.path}
@@ -84,6 +56,30 @@ const NavBar = () => {
               </NavLink>
             ))}
           </div>
+
+          {/* Center - Logo */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 transition-transform duration-500 hover:scale-105">
+            <img 
+              src={logo} 
+              alt="CK Textiles" 
+              className={`transition-all duration-500 ${
+                scrolled ? 'h-12' : 'h-14'
+              } drop-shadow-lg`} 
+            />
+          </div>
+          <div className="ml-3 hidden sm:block">
+              <h1 className="text-xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                CK Textiles
+              </h1>
+              <p className="text-xs text-gray-500">Premium Fashion</p>
+            </div>
+          {/* Mobile Menu Toggle */}
+          <button
+            className="lg:hidden text-gray-700 text-2xl p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FiX /> : <FiMenu />}
+          </button>
 
           {/* Right Side Icons */}
           <div className="flex items-center space-x-4">
