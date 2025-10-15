@@ -450,7 +450,7 @@ export const productsData = {
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: v7,
+      image: v8,
     },
     {
       id: 34,
@@ -458,7 +458,7 @@ export const productsData = {
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image:v8,
+      image:v7,
     },
     {
       id: 35,
