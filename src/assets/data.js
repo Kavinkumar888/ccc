@@ -21,9 +21,10 @@ import poloD20 from './Shirt/s16.jpg';
 import poloD21 from './Shirt/s17.jpg';
 import poloD22 from './Shirt/s18.jpg';
 import poloD23 from './Shirt/s19.jpg';
-import poloD24 from './Shirt/s21.jpg';
-import poloD25 from './Shirt/image.png';
-import poloD26 from './Shirt/image1.png';
+import poloD24 from './Shirt/image.png';
+import poloD25 from './Shirt/image1.png';
+import poloD26 from './Shirt/image2.png';
+import poloD27 from './Shirt/image3.png';
 
 import v1 from './Dothie/vasti1.jpg';
 import v2 from './Dothie/vasti2.jpg';
@@ -395,14 +396,6 @@ export const productsData = {
       description: 'Elegant polo t-shirt for casual and formal wear.',
       price: 599,
       image: poloD23,
-    },
-     {
-      id: 24,
-      name: 'Polo T-Shirt - Design 24',
-      category: 'T-Shirts',
-      description: 'Elegant polo t-shirt for casual and formal wear.',
-      price: 599,
-      image: poloD24,
     },
      {
       id: 25,
