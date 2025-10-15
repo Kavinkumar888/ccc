@@ -18,7 +18,6 @@ const BedroomPage = () => {
     { name: 'All', icon: <FiTag size={18} /> },
     { name: 'Bedding', icon: <FaBed size={18} /> },
     { name: 'Super King Size Bedding', icon: <FaStar size={18} /> },
-    { name: 'Bedsheet', icon: <FiPackage size={18} /> },
   ];
 
   const handleAddToCart = (product) => {

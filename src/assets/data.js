@@ -3,8 +3,101 @@ import poloD2 from './red.webp';
 import poloD3 from './blue.webp';
 import poloD4 from './gray.webp';
 import poloD5 from './black.webp';
+import poloD6 from './Shirt/s1.jpg';
+import poloD7 from './Shirt/s2.jpg';
+import poloD8 from './Shirt/s3.jpg';
+import poloD9 from './Shirt/s4.jpg';
+import poloD10 from './Shirt/s5.jpg';
+import poloD11 from './Shirt/s6.jpg';
+import poloD12 from './Shirt/s7.jpg';
+import poloD13 from './Shirt/s8.jpg';
+import poloD14 from './Shirt/s9.jpg';
+import poloD15 from './Shirt/s10.jpg';
+import poloD16 from './Shirt/s11.jpg';
+import poloD17 from './Shirt/s12.jpg';
+import poloD18 from './Shirt/s13.jpg';
+import poloD19 from './Shirt/s15.jpg';
+import poloD20 from './Shirt/s16.jpg';
+import poloD21 from './Shirt/s17.jpg';
+import poloD22 from './Shirt/s18.jpg';
+import poloD23 from './Shirt/s19.jpg';
+import poloD24 from './Shirt/s21.jpg';
+import poloD25 from './Shirt/image.png';
+import poloD26 from './Shirt/image1.png';
 
+import v1 from './Dothie/vasti1.jpg';
+import v2 from './Dothie/vasti2.jpg';
+import v3 from './Dothie/vasti3.jpg';
+import v4 from './Dothie/image1.png';
+import v5 from './Dothie/image2.png';
+import v6 from './Dothie/image3.png';
+import v7 from './Dothie/image4.png';
+import v8 from './Dothie/image5.png';
 
+import tw1 from './Dothie/i1.jpg';
+import tw2 from './Dothie/i2.jpg';
+import tw3 from './Dothie/i3.jpg';
+import tw4 from './Dothie/i4.jpg';
+
+import s1 from './Sarees/Saree1.jpg';
+import s2 from './Sarees/Saree2.jpg';
+import s3 from './Sarees/Saree3.jpg';
+import s4 from './Sarees/Saree4.jpg';
+import s5 from './Sarees/Saree5.jpg';
+import s6 from './Sarees/Saree6.jpg';
+import s7 from './Sarees/Saree7.jpg';
+import s8 from './Sarees/Saree8.jpg';
+import s9 from './Sarees/Saree9.jpg';
+import s10 from './Sarees/Saree10.jpg';
+import s11 from './Sarees/Saree11.jpg';
+import s12 from './Sarees/Saree12.jpg';
+
+import cs1 from './cotton saree/c1.jpg';
+import cs2 from './cotton saree/c2.jpg';
+import cs3 from './cotton saree/c3.jpg';
+import cs4 from './cotton saree/c4.jpg';
+import cs5 from './cotton saree/c5.jpg';
+import cs6 from './cotton saree/c6.jpg';
+import cs7 from './cotton saree/c7.jpg';
+import cs8 from './cotton saree/c8.jpg';
+import cs9 from './cotton saree/c9.jpg';
+import cs10 from './cotton saree/c10.jpg';
+import cs11 from './cotton saree/c11.jpg';
+import cs12 from './cotton saree/c12.jpg';
+import cs13 from './cotton saree/c13.jpg';
+import cs14 from './cotton saree/c25.jpg';
+import cs15 from './cotton saree/c15.jpg';
+import cs16 from './cotton saree/c16.jpg';
+import cs17 from './cotton saree/c17.jpg';
+import cs18 from './cotton saree/c18.jpg';
+import cs19 from './cotton saree/c19.jpg';
+import cs20 from './cotton saree/c20.jpg';
+import cs21 from './cotton saree/c21.jpg';
+import cs22 from './cotton saree/c22.jpg';
+import cs23 from './cotton saree/c23.jpg';
+import cs24 from './cotton saree/c24.jpg';
+
+import bb1 from './burss/b1.jpg';
+import bb2 from './burss/b2.jpg';
+import bb3 from './burss/b3.jpg';
+import bb4 from './burss/b4.jpg';
+import bb5 from './burss/b5.jpg';
+
+import b1 from './baby/baby 1.jpg';
+import b2 from './baby/baby 2.jpg';
+import b3 from './baby/baby 3.jpg';
+import b4 from './baby/baby 4.jpg';
+import b5 from './baby/baby 5.jpg';
+
+import T1 from './Towels/t1.jpg';
+import T2 from './Towels/t2.jpg';
+import T3 from './Towels/t3.jpg';
+import T4 from './Towels/t4.jpg';
+import T5 from './Towels/t5.jpg';
+import T6 from './Towels/t6.jpg';
+import T7 from './Towels/t7.jpg';
+import T8 from './Towels/t8.jpg';
+import T9 from './Towels/t9.jpg';
 
 import sb1 from './60^90 inch bedsheet image/60^90 inch bedsheet1.jpg';
 import sb2 from './60^90 inch bedsheet image/60^90 inch bedsheet2.jpg';
@@ -164,7 +257,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD6,
     },
     {
       id: 7,
@@ -172,7 +265,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD7,
     },
     {
       id: 8,
@@ -180,7 +273,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD8,
     },
     {
       id: 9,
@@ -188,7 +281,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD9,
     },
     {
       id: 10,
@@ -196,7 +289,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD10,
     },
     {
       id: 11,
@@ -204,7 +297,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD11,
     },
     {
       id: 12,
@@ -212,7 +305,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image:  poloD12,
     },
     {
       id: 13,
@@ -220,7 +313,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image:  poloD13,
     },
     {
       id: 14,
@@ -228,7 +321,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image:  poloD14,
     },
     {
       id: 15,
@@ -236,7 +329,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD15,
     },
     {
       id: 16,
@@ -244,7 +337,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image:  poloD16,
     },
     {
       id: 17,
@@ -252,7 +345,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image:  poloD17,
     },
     {
       id: 18,
@@ -260,7 +353,7 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Classic polo t-shirt with modern styling.',
       price: 599,
-      image: 'path/to/polo-tshirt1.jpg',
+      image: poloD18,
     },
     // Add 18 more Polo T-Shirts for a total of 19 items
     {
@@ -269,363 +362,128 @@ export const productsData = {
       category: 'T-Shirts',
       description: 'Elegant polo t-shirt for casual and formal wear.',
       price: 599,
-      image: 'path/to/polo-tshirt19.jpg',
+      image: poloD19,
+    },
+     {
+      id: 20,
+      name: 'Polo T-Shirt - Design 20',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD20,
+    },
+     {
+      id: 21,
+      name: 'Polo T-Shirt - Design 21',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD21,
+    },
+     {
+      id: 22,
+      name: 'Polo T-Shirt - Design 22',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD22,
+    },
+     {
+      id: 23,
+      name: 'Polo T-Shirt - Design 23',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD23,
+    },
+     {
+      id: 24,
+      name: 'Polo T-Shirt - Design 24',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD24,
+    },
+     {
+      id: 25,
+      name: 'Polo T-Shirt - Design 25',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD25,
+    },
+     {
+      id: 26,
+      name: 'Polo T-Shirt - Design 26',
+      category: 'T-Shirts',
+      description: 'Elegant polo t-shirt for casual and formal wear.',
+      price: 599,
+      image: poloD26,
     },
     {
-      id: 20,
+      id: 27,
       name: 'Colour Dhotie - Design 1',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v4,
     },
     {
-      id: 21,
+      id: 28,
       name: 'Colour Dhotie - Design 2',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v5,
     },
     {
-      id: 22,
+      id: 29,
       name: 'Colour Dhotie - Design 3',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v6,
     },
     {
-      id: 23,
-      name: 'Colour Dhotie - Design 4',
-      category: 'Traditional Wear',
-      description: 'Comfortable and colorful dhoti for men.',
-      price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
-    },
-    {
-      id: 24,
-      name: 'Colour Dhotie - Design 5',
-      category: 'Traditional Wear',
-      description: 'Comfortable and colorful dhoti for men.',
-      price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
-    },
-    {
-      id: 25,
-      name: 'Colour Dhotie - Design 6',
-      category: 'Traditional Wear',
-      description: 'Comfortable and colorful dhoti for men.',
-      price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
-    },
-    {
-      id: 26,
+      id: 33,
       name: 'Colour Dhotie - Design 7',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v7,
     },
     {
-      id: 27,
+      id: 34,
       name: 'Colour Dhotie - Design 8',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image:v8,
     },
     {
-      id: 28,
+      id: 35,
       name: 'Colour Dhotie - Design 9',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v3,
     },
     {
-      id: 29,
+      id: 36,
       name: 'Colour Dhotie - Design 10',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: 'path/to/colour-dhoti1.jpg',
+      image: v2,
     },
     // Add 10 more dhotis for a total of 11 items
     {
-      id: 30,
+      id: 37,
       name: 'Colour Dhotie - Design 11',
       category: 'Traditional Wear',
       description: 'Stylish and vibrant dhoti for traditional occasions.',
       price: 430,
-      image: 'path/to/colour-dhoti11.jpg',
-    },
-    {
-      id: 31,
-      name: 'Towel Combo Pack - Set 1',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 32,
-      name: 'Towel Combo Pack - Set 2',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 33,
-      name: 'Towel Combo Pack - Set 3',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 34,
-      name: 'Towel Combo Pack - Set 4',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 35,
-      name: 'Towel Combo Pack - Set 5',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 36,
-      name: 'Towel Combo Pack - Set 6',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 37,
-      name: 'Towel Combo Pack - Set 7',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 38,
-      name: 'Towel Combo Pack - Set 8',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 39,
-      name: 'Towel Combo Pack - Set 9',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    {
-      id: 40,
-      name: 'Towel Combo Pack - Set 10',
-      category: 'Accessories',
-      description: 'Soft and absorbent towel combo pack.',
-      price: 599,
-      image: 'path/to/towel-combo1.jpg',
-    },
-    // Add 10 more towel combo sets for a total of 11
-    {
-      id: 41,
-      name: 'Towel Combo Pack - Set 11',
-      category: 'Accessories',
-      description: 'High-quality towel combo for daily use.',
-      price: 599,
-      image: 'path/to/towel-combo11.jpg',
-    },
-    {
-      id: 42,
-      name: 'Towels',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 43,
-      name: 'Towels design-2',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 95,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 44,
-      name: 'Color cotton printed towel desgin-1',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 95,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 45,
-      name: 'Color cotton printed towel design-2',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 95,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 46,
-      name: 'Color cotton printed towel design-3',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 95,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 47,
-      name: 'Color cotton printed towel design-4',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 95,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 48,
-      name: 'Butterflyjacaurd printed towel',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 100,
-      image: 'path/to/towel1.jpg',
-    },
-
-    {
-      id: 50,
-      name: 'White cotton plain towel',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 51,
-      name: 'White cotton printed towel design-1',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 52,
-      name: 'White cotton printed towel design-2',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 53,
-      name: 'White cotton printed towel design-3',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 54,
-      name: 'Pure cotton towel design-1',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 55,
-      name: 'Pure cotton towel design-2',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 56,
-      name: 'Pure cotton towel design-3',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 57,
-      name: 'Pure cotton towel design-4',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 58,
-      name: 'Pure cotton towel design-5',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 59,
-      name: 'Pure cotton towel design-6',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 60,
-      name: 'Pure cotton towel design-7',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 61,
-      name: 'Pure cotton towel design-8',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    {
-      id: 62,
-      name: 'Pure cotton towel design-9',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 90,
-      image: 'path/to/towel1.jpg',
-    },
-    // Add 21 more towels for a total of 22
-    {
-      id: 63,
-      name: 'Pure cotton towel design-10',
-      category: 'Accessories',
-      description: 'Durable and soft towel for everyday use.',
-      price: 90,
-      image: 'path/to/towel22.jpg',
-    },
-    {
-      id: '64',
-      name: 'Pure cotten towel design-11',
-      category: 'Accessories',
-      description: 'Premium towel for a luxurious feel.',
-      price: 100,
-      image: 'path/to/towel1.jpg',
+      image: v1,
     },
   ],
   women: [
@@ -635,7 +493,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s1,
     },
     {
       id: 2,
@@ -643,7 +501,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s2,
     },
     {
       id: 3,
@@ -651,7 +509,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s3,
     },
     {
       id: 4,
@@ -659,7 +517,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s4,
     },
     {
       id: 5,
@@ -667,7 +525,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s5,
     },
     {
       id: 6,
@@ -675,7 +533,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s6,
     },
     {
       id: 7,
@@ -683,7 +541,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s7,
     },
     {
       id: 8,
@@ -691,7 +549,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s8,
     },
     {
       id: 9,
@@ -699,7 +557,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image:s9,
     },
     {
       id: 10,
@@ -707,7 +565,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image: s10,
     },
     {
       id: 11,
@@ -715,32 +573,32 @@ export const productsData = {
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image: s11,
     },
     {
-      id: 11,
-      name: 'Mulmul Cotton Saree - Design 11',
+      id: 12,
+      name: 'Mulmul Cotton Saree - Design 12',
       category: 'Sarees',
       description: 'Lightweight and soft mulmul cotton saree.',
       price: 740,
-      image: 'path/to/mulmul-cotton-saree1.jpg',
+      image: s12,
     },
     // Add 12 more mulmul sarees for a total of 13
-    {
-      id: 13,
-      name: 'Mulmul Cotton Saree - Design 13',
-      category: 'Sarees',
-      description: 'Beautifully printed mulmul cotton saree.',
-      price: 740,
-      image: 'path/to/mulmul-cotton-saree13.jpg',
-    },
+    // {
+    //   id: 13,
+    //   name: 'Mulmul Cotton Saree - Design 13',
+    //   category: 'Sarees',
+    //   description: 'Beautifully printed mulmul cotton saree.',
+    //   price: 740,
+    //   image: 'path/to/towel1.jpg',
+    // },
     {
       id: 14,
       name: 'Pouch - Design 1',
       category: 'Accessories',
       description: 'Compact pouch for essentials.',
       price: 499,
-      image: 'path/to/pouch1.jpg',
+      image: bb1,
     },
     {
       id: 15,
@@ -748,7 +606,7 @@ export const productsData = {
       category: 'Accessories',
       description: 'Compact pouch for essentials.',
       price: 499,
-      image: 'path/to/pouch1.jpg',
+      image: bb2,
     },
     {
       id: 16,
@@ -756,7 +614,7 @@ export const productsData = {
       category: 'Accessories',
       description: 'Compact pouch for essentials.',
       price: 499,
-      image: 'path/to/pouch1.jpg',
+      image: bb3,
     },
     {
       id: 17,
@@ -764,7 +622,7 @@ export const productsData = {
       category: 'Accessories',
       description: 'Compact pouch for essentials.',
       price: 499,
-      image: 'path/to/pouch1.jpg',
+      image: bb4,
     },
     // Add 4 more pouches for a total of 5
     {
@@ -773,7 +631,7 @@ export const productsData = {
       category: 'Accessories',
       description: 'Elegant pouch with vibrant design.',
       price: 499,
-      image: 'path/to/pouch5.jpg',
+      image: bb5,
     },
 
     {
@@ -782,7 +640,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image: cs1,
     },
     {
       id: 20,
@@ -790,7 +648,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs2,
     },
     {
       id: 21,
@@ -798,7 +656,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs3,
     },
     {
       id: 22,
@@ -806,7 +664,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image: cs4,
     },
     {
       id: 23,
@@ -814,7 +672,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs5,
     },
     {
       id: 24,
@@ -822,7 +680,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs6,
     },
     {
       id: 25,
@@ -830,7 +688,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs7,
     },
     {
       id: 26,
@@ -838,7 +696,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs8,
     },
     {
       id: 27,
@@ -846,7 +704,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs9,
     },
     {
       id: 28,
@@ -854,7 +712,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image: cs10,
     },
     {
       id: 29,
@@ -862,7 +720,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs11,
     },
     {
       id: 30,
@@ -870,7 +728,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs12,
     },
     {
       id: 31,
@@ -878,7 +736,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image: cs13,
     },
     {
       id: 32,
@@ -886,7 +744,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs14,
     },
     {
       id: 33,
@@ -894,7 +752,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs15,
     },
     {
       id: 34,
@@ -902,7 +760,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs16,
     },
     {
       id: 35,
@@ -910,7 +768,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs17,
     },
     {
       id: 36,
@@ -918,7 +776,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs18,
     },
     {
       id: 37,
@@ -926,7 +784,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs19,
     },
     {
       id: 38,
@@ -934,7 +792,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs20,
     },
     {
       id: 39,
@@ -942,7 +800,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image: cs21,
     },
     {
       id: 40,
@@ -950,7 +808,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs22,
     },
     {
       id: 41,
@@ -958,7 +816,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Comfortable and lightweight pure cotton saree.',
       price: 599,
-      image: 'path/to/pure-cotton-saree1.jpg',
+      image:cs23,
     },
 
     // Add 23 more for a total of 24 pure cotton sarees
@@ -968,7 +826,7 @@ export const productsData = {
       category: 'Sarees',
       description: 'Stylish pure cotton saree for special occasions.',
       price: 599,
-      image: 'path/to/pure-cotton-saree24.jpg',
+      image:cs24,
     },
   ],
   kids: [
@@ -978,7 +836,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Comfortable baby bed with soft cushioning.',
       price: 1200,
-      image: 'path/to/baby-bed1.jpg',
+      image: b1,
     },
     {
       id: 2,
@@ -986,7 +844,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Comfortable baby bed with soft cushioning.',
       price: 1200,
-      image: 'path/to/baby-bed1.jpg',
+      image: b2,
     },
     {
       id: 3,
@@ -994,7 +852,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Comfortable baby bed with soft cushioning.',
       price: 1200,
-      image: 'path/to/baby-bed1.jpg',
+      image: b3,
     },
     {
       id: 4,
@@ -1002,7 +860,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Comfortable baby bed with soft cushioning.',
       price: 1200,
-      image: 'path/to/baby-bed1.jpg',
+      image: b4,
     },
     // Add 4 more baby beds for a total of 5
     {
@@ -1011,7 +869,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Stylish and durable baby bed.',
       price: 1200,
-      image: 'path/to/baby-bed5.jpg',
+      image: b5,
     },
   ],
   bedroomsets: [
@@ -1021,7 +879,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'Combo of premium bedsheet and soft towel.',
       price: 699,
-      image: 'path/to/combo1.jpg',
+      image:tw1,
     },
     {
       id: 2,
@@ -1029,7 +887,7 @@ export const productsData = {
       category: "Bedding",
       description: "Set of premium pillow covers with soft fabric.",
       price: 399,
-      image: "path/to/combo2.jpg"
+      image: tw2
     },
     {
       id: 3,
@@ -1037,7 +895,7 @@ export const productsData = {
       category: "Bedding",
       description: "Cozy and warm quilted blanket for a comfortable sleep.",
       price: 999,
-      image: "path/to/combo3.jpg"
+      image: tw3
     },
     
     
@@ -1056,7 +914,7 @@ export const productsData = {
       category: 'Bedding',
       description: 'High-quality bedsheet and towel combo.',
       price: 39.99,
-      image: 'path/to/combo4.jpg',
+      image: tw4,
     },
 
     {

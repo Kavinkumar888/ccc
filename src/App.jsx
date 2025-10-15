@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import MenPage from './pages/MenPage';
+import MenPage from './pages/TshirtPage';
 import WomenPage from './pages/WomenPage';
 import BedroomPage from './pages/BedroomPage';
 import KidsPage from './pages/KidsPage';
@@ -11,6 +11,7 @@ import CartPage from './pages/Cart';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
+import TshirtPage from './pages/TshirtPage';
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
           <Routes>
             {/* Home Page */}
             <Route path="/" element={<Home />} />
-            <Route path="/men" element={<MenPage />} />
+            <Route path="/TshirtPage" element={<TshirtPage />} />
             <Route path="/women" element={<WomenPage />} />
             <Route path="/kids" element={<KidsPage />} />
             <Route path="/bedroomsets" element={<BedroomPage />} />

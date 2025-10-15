@@ -4,7 +4,7 @@ import { productsData } from '../assets/data';
 import { FiTag, FiBox, FiShield, FiZoomIn } from 'react-icons/fi';
 import { RiShirtFill } from 'react-icons/ri';
 
-const MenPage = () => {
+const TshirtPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [notification, setNotification] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -20,7 +20,6 @@ const MenPage = () => {
     { name: 'All', icon: <FiTag size={18} /> },
     { name: 'T-Shirts', icon: <RiShirtFill size={18} /> },
     { name: 'Traditional Wear', icon: <FiBox size={18} /> },
-    { name: 'Accessories', icon: <FiShield size={18} /> },
   ];
 
   const handleAddToCart = (product) => {
@@ -92,7 +91,6 @@ const MenPage = () => {
                         </div>
                       </div>
                     </div>
-
                     {/* Product Info */}
                     <div className="p-4">
                       <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
@@ -159,4 +157,4 @@ const MenPage = () => {
   );
 };
 
-export default MenPage;
+export default TshirtPage;
