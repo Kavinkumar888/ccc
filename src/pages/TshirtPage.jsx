@@ -20,6 +20,7 @@ const TshirtPage = () => {
     { name: 'All', icon: <FiTag size={18} /> },
     { name: 'T-Shirts', icon: <RiShirtFill size={18} /> },
     { name: 'Traditional Wear', icon: <FiBox size={18} /> },
+    { name: 'Towels', icon: <FiShield size={18} /> },
   ];
 
   const handleAddToCart = (product) => {
@@ -28,6 +29,14 @@ const TshirtPage = () => {
     setTimeout(() => {
       setNotification(null);
     }, 2000);
+  };
+
+  // Function to display quantity based on category
+  const displayQuantity = (product) => {
+    if (product.category === 'Towels') {
+      return '1 piece';
+    }
+    return ''; // Empty for other categories
   };
 
   return (
@@ -95,6 +104,15 @@ const TshirtPage = () => {
                     <div className="p-4">
                       <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
                       <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
+                      
+                      {/* Quantity Display for Towels */}
+                      {product.category === 'Towels' && (
+                        <div className="mb-2">
+                          <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">
+                            1 piece
+                          </span>
+                        </div>
+                      )}
                       
                       <div className="flex items-center justify-between">
                         <span className="text-xl font-bold text-blue-600">₹{product.price}</span>
