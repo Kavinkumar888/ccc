@@ -34,6 +34,13 @@ import v5 from './Dothie/image2.png';
 import v6 from './Dothie/image3.png';
 import v7 from './Dothie/image4.png';
 import v8 from './Dothie/image5.png';
+import v9 from './Dothie/i7.png';
+import v10 from './Dothie/i8.png';
+import v11 from './Dothie/i9.png';
+import v12 from './Dothie/i10.png';
+import v13 from './Dothie/i11.png';
+import v14 from './Dothie/i12.png';
+import v15 from './Dothie/i13.png';
 
 import tw1 from './Dothie/i1.jpg';
 import tw2 from './Dothie/i2.jpg';
@@ -207,6 +214,26 @@ import sk61 from './Super king bed image/sk61.jpg';
 import sk62 from './Super king bed image/sk62.jpg';
 import sk63 from './Super king bed image/sk63.jpg';
 import sk64 from './Super king bed image/sk64.jpg';
+
+import t701 from './t70 1.jpg';
+import t702 from './t70 2.jpg';
+import t703 from './t70 3.jpg';
+import t704 from './t70 4.jpg';
+import t705 from './t70 5.jpg';
+import t706 from './t70 6.jpg';
+import t707 from './t70 7.jpg';
+import t708 from './t70 8.jpg';
+import t709 from './t70 9.jpg';
+import t7010 from './t70 10.jpg';
+import t7011 from './t70 11.jpg';
+import t7012 from './t70 12.jpg';
+import t7013 from './t70 13.jpg';
+import t7014 from './t70 14.jpg';
+import t7015 from './t70 15.jpg';
+import t7016 from './t70 16.jpg';
+import t7017 from './t70 17.jpg';
+import t7018 from './t70 18.jpg';
+import t7019 from './t70 19.jpg';
 import { ImOpt } from 'react-icons/im';
 
 
@@ -419,7 +446,7 @@ export const productsData = {
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: v4,
+      image: v9,
     },
     {
       id: 28,
@@ -427,7 +454,7 @@ export const productsData = {
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: v5,
+      image: v10,
     },
     {
       id: 29,
@@ -435,46 +462,62 @@ export const productsData = {
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: v6,
+      image: v11,
     },
     {
       id: 33,
+      name: 'Colour Dhotie - Design 4',
+      category: 'Traditional Wear',
+      description: 'Comfortable and colorful dhoti for men.',
+      price: 430,
+      image: v12,
+    },
+    {
+      id: 34,
+      name: 'Colour Dhotie - Design 5',
+      category: 'Traditional Wear',
+      description: 'Comfortable and colorful dhoti for men.',
+      price: 430,
+      image:v13,
+    },
+    {
+      id: 35,
+      name: 'Colour Dhotie - Design 6',
+      category: 'Traditional Wear',
+      description: 'Comfortable and colorful dhoti for men.',
+      price: 430,
+      image: v14,
+    },
+    {
+      id: 36,
       name: 'Colour Dhotie - Design 7',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
-      image: v8,
+      image: v15,
     },
-    {
-      id: 34,
+    // Add 10 more dhotis for a total of 11 items
+      {
+      id: 37,
       name: 'Colour Dhotie - Design 8',
-      category: 'Traditional Wear',
-      description: 'Comfortable and colorful dhoti for men.',
-      price: 430,
-      image:v7,
-    },
-    {
-      id: 35,
-      name: 'Colour Dhotie - Design 9',
       category: 'Traditional Wear',
       description: 'Comfortable and colorful dhoti for men.',
       price: 430,
       image: v3,
     },
     {
-      id: 36,
-      name: 'Colour Dhotie - Design 10',
+      id: 38,
+      name: 'Colour Dhotie - Design 9',
       category: 'Traditional Wear',
-      description: 'Comfortable and colorful dhoti for men.',
+      description: 'Stylish and vibrant dhoti for traditional occasions.',
       price: 430,
       image: v2,
     },
-    // Add 10 more dhotis for a total of 11 items
-    {
-      id: 37,
-      name: 'Colour Dhotie - Design 11',
+      {
+      id: 39,
+      name: 'Colour Dhotie - Design 10',
       category: 'Traditional Wear',
-      description: 'Stylish and vibrant dhoti for traditional occasions.',
+      description: 'Comfortable and colorful dhoti for men.',
       price: 430,
       image: v1,
     },
@@ -1306,55 +1349,55 @@ export const productsData = {
       price: 380,
       image: sb40,
     },
-    {
-      id: 45,
-      name: '90*100 Bedspread King - Design 1',
-      category: 'Bedding',
-      description: 'Elegant king-size bedspread with soft fabric.',
-      price: 550,
-      image: 'path/to/king-bedspread1.jpg',
-    },
+    // {
+    //   id: 45,
+    //   name: '90*100 Bedspread King - Design 1',
+    //   category: 'Bedding',
+    //   description: 'Elegant king-size bedspread with soft fabric.',
+    //   price: 550,
+    //   image: 'path/to/king-bedspread1.jpg',
+    // },
 
-    {
-      id: 46,
-      name: "90*100 Bedspread King - Design 2",
-      category: "Bedding",
-      description: "Elegant king-size bedspread with soft fabric.",
-      price: 550,
-      image: "path/to/king-bedspread2.jpg"
-    },
-    {
-      id: 47,
-      name: "90*100 Bedspread King - Design 3",
-      category: "Bedding",
-      description: "Elegant king-size bedspread with soft fabric.",
-      price: 550,
-      image: "path/to/king-bedspread3.jpg"
-    },
-    {
-      id: 48,
-      name: "90*100 Bedspread King - Design 4",
-      category: "Bedding",
-      description: "Elegant king-size bedspread with soft fabric.",
-      price: 550,
-      image: "path/to/king-bedspread4.jpg"
-    },
-    {
-      id: 49,
-      name: "90*100 Bedspread King - Design 5",
-      category: "Bedding",
-      description: "Elegant king-size bedspread with soft fabric.",
-      price: 550,
-      image: "path/to/king-bedspread5.jpg"
-    },
-    {
-      id: 50,
-      name: "90*100 Bedspread King - Design 6",
-      category: "Bedding",
-      description: "Elegant king-size bedspread with soft fabric.",
-      price: 550,
-      image: "path/to/king-bedspread6.jpg"
-    },
+    // {
+    //   id: 46,
+    //   name: "90*100 Bedspread King - Design 2",
+    //   category: "Bedding",
+    //   description: "Elegant king-size bedspread with soft fabric.",
+    //   price: 550,
+    //   image: "path/to/king-bedspread2.jpg"
+    // },
+    // {
+    //   id: 47,
+    //   name: "90*100 Bedspread King - Design 3",
+    //   category: "Bedding",
+    //   description: "Elegant king-size bedspread with soft fabric.",
+    //   price: 550,
+    //   image: "path/to/king-bedspread3.jpg"
+    // },
+    // {
+    //   id: 48,
+    //   name: "90*100 Bedspread King - Design 4",
+    //   category: "Bedding",
+    //   description: "Elegant king-size bedspread with soft fabric.",
+    //   price: 550,
+    //   image: "path/to/king-bedspread4.jpg"
+    // },
+    // {
+    //   id: 49,
+    //   name: "90*100 Bedspread King - Design 5",
+    //   category: "Bedding",
+    //   description: "Elegant king-size bedspread with soft fabric.",
+    //   price: 550,
+    //   image: "path/to/king-bedspread5.jpg"
+    // },
+    // {
+    //   id: 50,
+    //   name: "90*100 Bedspread King - Design 6",
+    //   category: "Bedding",
+    //   description: "Elegant king-size bedspread with soft fabric.",
+    //   price: 550,
+    //   image: "path/to/king-bedspread6.jpg"
+    // },
     // {
     //   id: 51,
     //   name: "90*100 Bedspread King - Design 7",
@@ -1893,7 +1936,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread7.jpg"
+      image: t701
     },
 
     {
@@ -1902,7 +1945,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread8.jpg"
+      image: t702
     },
     {
       id: 85,
@@ -1910,7 +1953,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread9.jpg"
+      image: t703
     },
     {
       id: 86,
@@ -1918,7 +1961,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread10.jpg"
+      image: t704
     },
     {
       id: 87,
@@ -1926,7 +1969,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread11.jpg"
+      image: t705
     },
     {
       id: 88,
@@ -1934,7 +1977,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread12.jpg"
+      image: t706
     },
     {
       id: 89,
@@ -1942,7 +1985,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread13.jpg"
+      image: t707
     },
     {
       id: 90,
@@ -1950,7 +1993,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread14.jpg"
+      image: t708
     },
     {
       id: 91,
@@ -1958,7 +2001,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread15.jpg"
+      image: t709
     },
     {
       id: 92,
@@ -1966,7 +2009,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread16.jpg"
+      image: t7010
     },
     {
       id: 93,
@@ -1974,7 +2017,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread17.jpg"
+      image: t7011
     },
     {
       id: 94,
@@ -1982,7 +2025,7 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread18.jpg"
+      image: t7012
     },
     {
       id: 95,
@@ -1990,9 +2033,55 @@ export const productsData = {
       category: "Bedding",
       description: "Elegant king-size bedspread with soft fabric.",
       price: 430,
-      image: "path/to/king-bedspread19.jpg"
+      image: t7013
     },
-
-
+      {
+      id: 96,
+      name: "70*90 bedspread queen Design-14",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7014
+    },
+     {
+      id: 97,
+      name: "70*90 bedspread queen Design-15",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7015
+    },
+     {
+      id: 98,
+      name: "70*90 bedspread queen Design-16",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7016
+    },
+     {
+      id: 99,
+      name: "70*90 bedspread queen Design-17",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7017
+    },
+     {
+      id: 100,
+      name: "70*90 bedspread queen Design-18",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7018
+    },
+     {
+      id: 101,
+      name: "70*90 bedspread queen Design-19",
+      category: "Bedding",
+      description: "Elegant king-size bedspread with soft fabric.",
+      price: 430,
+      image: t7019
+    },
   ],
 };
