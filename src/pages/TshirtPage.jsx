@@ -1,31 +1,27 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { productsData } from '../assets/data';
-import { FiTag, FiBox, FiShield, FiZoomIn } from 'react-icons/fi';
-import { RiShirtFill } from 'react-icons/ri';
+import { FiTag, FiZoomIn } from 'react-icons/fi';
 
 const TshirtPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [notification, setNotification] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const { addToCart } = useCart();
 
-  const products = productsData.men;
+  const products = productsData.men.filter(product => product.category === 'T-Shirts');
 
-  const filteredProducts = selectedCategory === 'All'
-    ? products
-    : products.filter(product => product.category === selectedCategory);
+  const filteredProducts =
+    selectedCategory === 'All'
+      ? products
+      : products.filter(product => product.category === selectedCategory);
 
   const subcategories = [
     { name: 'All', icon: <FiTag size={18} /> },
+    { name: 'T-Shirts', icon: <FiTag size={18} /> }, // Could add different icon if needed
   ];
 
   const handleAddToCart = (product) => {
     addToCart(product);
-    setNotification(`${product.name} has been added to the cart!`);
-    setTimeout(() => {
-      setNotification(null);
-    }, 2000);
   };
 
   return (
@@ -57,30 +53,30 @@ const TshirtPage = () => {
 
           {/* Products Grid */}
           <div className="lg:w-3/4 w-full">
-            {/* Category Title */}
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                {selectedCategory === 'All' ? 'All Products' : selectedCategory}
+                {selectedCategory === 'All' ? 'All T-Shirts' : 'T-Shirts'}
               </h1>
               <p className="text-gray-600">
                 Showing {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
               </p>
             </div>
 
-            {/* Products */}
             {filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredProducts.map((product) => (
-                  <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
-                    {/* Image Container */}
+                  <div
+                    key={product.id}
+                    className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
+                  >
+                    {/* Image */}
                     <div className="relative overflow-hidden bg-gray-100">
                       <img
                         src={product.image}
                         alt={product.name}
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      {/* Zoom Overlay */}
-                      <div 
+                      <div
                         className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 cursor-pointer flex items-center justify-center"
                         onClick={() => setSelectedImage(product.image)}
                       >
@@ -89,20 +85,11 @@ const TshirtPage = () => {
                         </div>
                       </div>
                     </div>
+
                     {/* Product Info */}
                     <div className="p-4">
                       <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
                       <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
-                      
-                      {/* Quantity Display for Towels */}
-                      {product.category === 'Towels' && (
-                        <div className="mb-2">
-                          <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">
-                            1 piece
-                          </span>
-                        </div>
-                      )}
-                      
                       <div className="flex items-center justify-between">
                         <span className="text-xl font-bold text-blue-600">₹{product.price}</span>
                         <button
@@ -120,23 +107,17 @@ const TshirtPage = () => {
               <div className="text-center py-12">
                 <div className="text-gray-400 text-6xl mb-4">😔</div>
                 <h3 className="text-xl font-semibold text-gray-600 mb-2">No products found</h3>
-                <p className="text-gray-500">Try selecting a different category</p>
               </div>
             )}
           </div>
         </div>
       </div>
 
-      {/* Image Popup Modal */}
+      {/* Image Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
           <div className="relative max-w-4xl max-h-full">
-            <img 
-              src={selectedImage} 
-              alt="Product" 
-              className="max-w-full max-h-screen object-contain rounded-lg"
-            />
-            {/* Close Button */}
+            <img src={selectedImage} alt="Product" className="max-w-full max-h-screen object-contain rounded-lg" />
             <button
               className="absolute top-4 right-4 bg-white text-gray-800 p-2 rounded-full hover:bg-gray-200 transition-colors duration-300 shadow-lg"
               onClick={() => setSelectedImage(null)}

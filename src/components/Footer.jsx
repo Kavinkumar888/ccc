@@ -13,10 +13,10 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul>
               <li><NavLink to="/" className="block hover:text-blue-400">Home</NavLink></li>
-              <li><NavLink to="/men" className="block hover:text-blue-400">Men</NavLink></li>
-              <li><NavLink to="/women" className="block hover:text-blue-400">Women</NavLink></li>
-              <li><NavLink to="/kids" className="block hover:text-blue-400">Kids</NavLink></li>
-              <li><NavLink to="/bedroomsets" className="block hover:text-blue-400">Bedroom Sets</NavLink></li>
+              <li><NavLink to="/TshirtPage" className="block hover:text-blue-400">Tshirt</NavLink></li>
+              <li><NavLink to="/Towel" className="block hover:text-blue-400">Women</NavLink></li>
+              <li><NavLink to="/KidsPage" className="block hover:text-blue-400">Kids</NavLink></li>
+              <li><NavLink to="/BedroomPage" className="block hover:text-blue-400">Bedroom Sets</NavLink></li>
 
             </ul>
           </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Customer Service</h3>
             <ul>
-              <li><NavLink to="/contact" className="block hover:text-blue-400">Contact Us</NavLink></li>
+              <li><NavLink to="/ContactUs" className="block hover:text-blue-400">Contact Us</NavLink></li>
               <li><NavLink to="/returns" className="block hover:text-blue-400">Returns & Exchanges</NavLink></li>
               <li><NavLink to="/shipping" className="block hover:text-blue-400">Shipping Info</NavLink></li>
               <li><NavLink to="/faq" className="block hover:text-blue-400">FAQ</NavLink></li>

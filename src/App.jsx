@@ -13,6 +13,7 @@ import ScrollToTop from './components/ScrollToTop';
 import TshirtPage from './pages/TshirtPage';
 import TowelPage from './pages/Towel';
 import TraditionalWearPage from './pages/TraditionalWearPage';
+import ContactUs from './components/ContactUs';
 
 const App = () => {
   return (
@@ -34,7 +35,7 @@ const App = () => {
             <Route path="/kids" element={<KidsPage />} />
             <Route path="/bedroomsets" element={<BedroomPage />} />
             <Route path="/cart" element={<CartPage />} />
-
+            <Route path="/Contact" element={<ContactUs />}/>
             {/* 404 Page */}
             <Route path="*" element={<div className="text-center py-8 text-xl">Page Not Found</div>} />
           </Routes>
