@@ -27,7 +27,7 @@ const NavBar = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/Tshirt', label: 'T-shirt' },
+    { path: '/TshirtPage', label: 'T-shirt' },
     { path: '/TowelPage', label: 'Towels' },
     { path: '/TraditionalWearPage', label: 'Dhothie' },
     { path: '/women', label: 'Sarees' },

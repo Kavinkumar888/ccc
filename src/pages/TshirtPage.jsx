@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
 import { productsData } from '../assets/data';
-import { FiTag, FiZoomIn } from 'react-icons/fi';
+import { FiTag, FiBox, FiShield, FiZoomIn } from 'react-icons/fi';
 import { RiShirtFill } from 'react-icons/ri';
 
 const TshirtPage = () => {
@@ -10,19 +10,11 @@ const TshirtPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const { addToCart } = useCart();
 
-  // Filter products - only show T-Shirts and exclude Dhoties
-  const allProducts = productsData.men;
-  
-  // Filter out dhotie products and only include T-Shirts
-  const tshirtProducts = allProducts.filter(product => 
-    product.category === 'T-Shirts' && 
-    !product.name.toLowerCase().includes('dhotie') && 
-    !product.name.toLowerCase().includes('dhoti')
-  );
+  const products = productsData.men;
 
   const filteredProducts = selectedCategory === 'All'
-    ? tshirtProducts
-    : tshirtProducts.filter(product => product.category === selectedCategory);
+    ? products
+    : products.filter(product => product.category === selectedCategory);
 
   const subcategories = [
     { name: 'All', icon: <FiTag size={18} /> },
@@ -68,10 +60,10 @@ const TshirtPage = () => {
             {/* Category Title */}
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                {selectedCategory === 'All' ? 'All T-Shirts' : selectedCategory}
+                {selectedCategory === 'All' ? 'All Products' : selectedCategory}
               </h1>
               <p className="text-gray-600">
-                Showing {filteredProducts.length} {filteredProducts.length === 1 ? 'T-Shirt' : 'T-Shirts'}
+                Showing {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
               </p>
             </div>
 
@@ -102,6 +94,15 @@ const TshirtPage = () => {
                       <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
                       <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
                       
+                      {/* Quantity Display for Towels */}
+                      {product.category === 'Towels' && (
+                        <div className="mb-2">
+                          <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">
+                            1 piece
+                          </span>
+                        </div>
+                      )}
+                      
                       <div className="flex items-center justify-between">
                         <span className="text-xl font-bold text-blue-600">₹{product.price}</span>
                         <button
@@ -117,9 +118,9 @@ const TshirtPage = () => {
               </div>
             ) : (
               <div className="text-center py-12">
-                <div className="text-gray-400 text-6xl mb-4">👕</div>
-                <h3 className="text-xl font-semibold text-gray-600 mb-2">No T-Shirts found</h3>
-                <p className="text-gray-500">We're adding more T-Shirts to our collection soon!</p>
+                <div className="text-gray-400 text-6xl mb-4">😔</div>
+                <h3 className="text-xl font-semibold text-gray-600 mb-2">No products found</h3>
+                <p className="text-gray-500">Try selecting a different category</p>
               </div>
             )}
           </div>
@@ -145,13 +146,6 @@ const TshirtPage = () => {
               </svg>
             </button>
           </div>
-        </div>
-      )}
-
-      {/* Notification */}
-      {notification && (
-        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-bounce">
-          {notification}
         </div>
       )}
     </div>
