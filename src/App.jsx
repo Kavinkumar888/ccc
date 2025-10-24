@@ -11,7 +11,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 import TshirtPage from './pages/TshirtPage';
-import TowelPage from './pages/TowelPage';
+import TowelPage from './pages/Towel';
 import TraditionalWearPage from './pages/TraditionalWearPage';
 
 const App = () => {
