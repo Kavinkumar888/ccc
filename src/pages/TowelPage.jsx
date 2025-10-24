@@ -4,7 +4,7 @@ import { productsData } from '../assets/data';
 import { FiZoomIn } from 'react-icons/fi';
 import { GiTowel, GiCottonFlower, GiClothes } from 'react-icons/gi'; // example icons
 
-const TowelPage = () => {
+const Towelpage = () => {
   const [notification, setNotification] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -13,9 +13,6 @@ const TowelPage = () => {
   // Sidebar categories (you can change icons/names)
   const subcategories = [
     { name: 'All', icon: <GiClothes /> },
-    { name: 'Cotton Towels', icon: <GiCottonFlower /> },
-    { name: 'Bath Towels', icon: <GiTowel /> },
-    { name: 'Hand Towels', icon: <GiTowel /> },
   ];
 
   // All towel products
@@ -187,4 +184,4 @@ const TowelPage = () => {
   );
 };
 
-export default TowelPage;
+export default Towelpage;

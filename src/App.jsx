@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import MenPage from './pages/TshirtPage';
 import WomenPage from './pages/WomenPage';
 import BedroomPage from './pages/BedroomPage';
 import KidsPage from './pages/KidsPage';
@@ -12,7 +11,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 import TshirtPage from './pages/TshirtPage';
-import TowelsPage from './pages/towelpage';
+import TowelsPage from './pages/Towelpage';
 import TraditionalWearPage from './pages/TraditionalWearPage';
 
 const App = () => {
