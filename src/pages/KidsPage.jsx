@@ -16,7 +16,6 @@ const KidsPage = () => {
 
   const subcategories = [
     { name: 'All', icon: <FiTag size={18} /> },
-    { name: 'Bedding', icon: <FaBed size={18} /> },
   ];
 
   const handleAddToCart = (product) => {

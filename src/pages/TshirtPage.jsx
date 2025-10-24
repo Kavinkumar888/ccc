@@ -18,9 +18,6 @@ const TshirtPage = () => {
 
   const subcategories = [
     { name: 'All', icon: <FiTag size={18} /> },
-    { name: 'T-Shirts', icon: <RiShirtFill size={18} /> },
-    { name: 'Traditional Wear', icon: <FiBox size={18} /> },
-    { name: 'Towels', icon: <FiShield size={18} /> },
   ];
 
   const handleAddToCart = (product) => {

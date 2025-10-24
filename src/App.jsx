@@ -12,6 +12,8 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 import TshirtPage from './pages/TshirtPage';
+import TowelsPage from './pages/towelpage';
+import TraditionalWearPage from './pages/TraditionalWearPage';
 
 const App = () => {
   return (
@@ -27,7 +29,9 @@ const App = () => {
             {/* Home Page */}
             <Route path="/" element={<Home />} />
             <Route path="/TshirtPage" element={<TshirtPage />} />
+            <Route path="/TowelPage" element={<TowelsPage />}/>
             <Route path="/women" element={<WomenPage />} />
+            <Route path="/TraditionalWearPage" element={<TraditionalWearPage />}/>
             <Route path="/kids" element={<KidsPage />} />
             <Route path="/bedroomsets" element={<BedroomPage />} />
             <Route path="/cart" element={<CartPage />} />

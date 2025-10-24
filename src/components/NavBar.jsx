@@ -28,8 +28,10 @@ const NavBar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/TshirtPage', label: 'T-shirt' },
+    { path: '/TowelPage', label: 'Towels' },
+    { path: '/TraditionalWearPage', label: 'Dhothie' },
     { path: '/women', label: 'Sarees' },
-    { path: '/kids', label: 'Kids' },
+    { path: '/kids', label: 'Baby Bed' },
     { path: '/bedroomsets', label: 'Bedroom Sets' }
   ];
 
@@ -57,22 +59,19 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* Center - Logo */}
+          {/* Center - Logo Only */}
           <div className="absolute left-1/2 transform -translate-x-1/2 transition-transform duration-500 hover:scale-105">
-            <img 
-              src={logo} 
-              alt="CK Textiles" 
-              className={`transition-all duration-500 ${
-                scrolled ? 'h-12' : 'h-14'
-              } drop-shadow-lg`} 
-            />
+            <NavLink to="/" onClick={handleLinkClick}>
+              <img 
+                src={logo} 
+                alt="CK Textiles" 
+                className={`transition-all duration-500 ${
+                  scrolled ? 'h-14' : 'h-16'
+                } drop-shadow-lg`} 
+              />
+            </NavLink>
           </div>
-          <div className="ml-3 hidden sm:block">
-              <h1 className="text-xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                CK Textiles
-              </h1>
-              <p className="text-xs text-gray-500">Premium Fashion</p>
-            </div>
+
           {/* Mobile Menu Toggle */}
           <button
             className="lg:hidden text-gray-700 text-2xl p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
