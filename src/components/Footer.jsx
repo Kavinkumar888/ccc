@@ -36,9 +36,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Company Info</h3>
             <p className="mb-2">CK Textile, Your Fashion Destination</p>
-            <p className="mb-2">Address: 123 Fashion Street, City, Country</p>
-            <p className="mb-2">Phone: +123 456 7890</p>
-            <p className="mb-2">Email: support@cktextile.com</p>
+            <p className="mb-2">Address: N.S Building,103-FArunachala Asari Street,Salem-636001</p>
+            <p className="mb-2">Phone: +91 99528 00199</p>
+            <p className="mb-2">Email: lglatha@gmail.com</p>
           </div>
 
           {/* Social Media */}
