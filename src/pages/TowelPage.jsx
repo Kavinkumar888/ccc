@@ -4,7 +4,7 @@ import { productsData } from '../assets/data';
 import { FiZoomIn } from 'react-icons/fi';
 import { GiTowel, GiCottonFlower, GiClothes } from 'react-icons/gi'; // example icons
 
-const Towelpage = () => {
+const TowelPage = () => {
   const [notification, setNotification] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -184,4 +184,4 @@ const Towelpage = () => {
   );
 };
 
-export default Towelpage;
+export default TowelPage;
