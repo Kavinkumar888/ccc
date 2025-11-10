@@ -4,15 +4,32 @@ import { productsData } from '../assets/data';
 import { FaArrowRight, FaShoppingBag, FaStar, FaTruck, FaShieldAlt, FaSmile } from 'react-icons/fa';
 
 const HomeCatalog = () => {
-  const categories = Object.keys(productsData);
+  // Define proper category names and their routes
+  const categories = [
+    { key: 'men', name: 'T-Shirts', route: '/TshirtPage' },
+    { key: 'women', name: 'Sarees', route: '/women' },
+    { key: 'kids', name: 'Baby Bed', route: '/kids' },
+    { key: 'bedroomsets', name: 'Bedroom Sets', route: '/bedroomsets' }
+  ];
 
   return (
     <div className="container mx-auto py-12 px-4">
-      {/* Header Section */}
+      {/* Header Section with Logo */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div className="flex justify-center items-center mb-6">
+          {/* Add your logo here - replace with your actual logo path */}
+          <img 
+            src="/logo.png" 
+            alt="Company Logo" 
+            className="h-16 w-16 mr-4 object-contain"
+          />
+          <h1 className="text-4xl font-bold text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Our Store
+          </h1>
+        </div>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Explore Our Collections
-        </h1>
+        </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Discover the perfect blend of style, comfort, and quality across all our categories
         </p>
@@ -20,17 +37,17 @@ const HomeCatalog = () => {
 
       {/* Categories Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-        {categories.map((categoryKey) => {
-          const categoryProducts = productsData[categoryKey];
-          const previewProducts = categoryProducts.slice(0, 4);
+        {categories.map((category) => {
+          const categoryProducts = productsData[category.key];
+          const previewProducts = categoryProducts ? categoryProducts.slice(0, 4) : [];
 
           return (
-            <div key={categoryKey} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+            <div key={category.key} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
               {/* Category Header */}
               <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 text-white">
                 <h2 className="text-xl font-bold text-center flex items-center justify-center gap-2">
                   <FaShoppingBag className="text-white" />
-                  {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
+                  {category.name}
                 </h2>
               </div>
 
@@ -38,12 +55,16 @@ const HomeCatalog = () => {
                 <div className="grid grid-cols-2 gap-3">
                   {previewProducts.map((product) => (
                     <div key={product.id} className="group/item overflow-hidden rounded-lg bg-gray-50 hover:bg-white transition-all duration-300">
-                      <Link to={`/${categoryKey}`}>
+                      <Link to={category.route}>
                         <div className="relative overflow-hidden">
                           <img
                             src={product.image}
                             alt={product.name}
                             className="h-28 w-full object-cover transition-transform duration-500 group-hover/item:scale-110"
+                            onError={(e) => {
+                              // Fallback image if product image fails to load
+                              e.target.src = '/placeholder-image.jpg';
+                            }}
                           />
                           <div className="absolute inset-0 bg-black opacity-0 group-hover/item:opacity-10 transition-opacity duration-300"></div>
                         </div>
@@ -60,10 +81,10 @@ const HomeCatalog = () => {
                 {/* View All Button */}
                 <div className="mt-4 text-center">
                   <Link
-                    to={`/${categoryKey}`}
+                    to={category.route}
                     className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm group/link transition-all duration-300"
                   >
-                    View All {categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)}
+                    View All {category.name}
                     <FaArrowRight className="group-hover/link:translate-x-1 transition-transform duration-300" />
                   </Link>
                 </div>
@@ -115,7 +136,7 @@ const HomeCatalog = () => {
           Explore our exclusive collections and discover fashion that speaks to you
         </p>
         <Link
-          to="/men"
+          to="/TshirtPage"
           className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group"
         >
           Start Shopping Now
